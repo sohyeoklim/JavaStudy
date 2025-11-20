@@ -1,0 +1,31 @@
+package collection.list.test.ex1;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class ListEx3 {
+
+    public static void main(String[] args) {
+        ArrayList<Integer> list = new ArrayList<>();
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("n개의 정수를 입력하세요");
+        while (true) {
+            int input = scanner.nextInt();
+            if (input == 0) {
+                break;
+            }
+            list.add(input);
+        }
+
+        int total = 0;
+        for (int i = 0; i < list.size(); i++) {
+            total += list.get(i);
+        }
+
+        double average = (double) total / list.size();
+
+        System.out.println("입력한 정수의 합계: " + total);
+        System.out.println("입력한 정수의 평균: " + average);
+    }
+}

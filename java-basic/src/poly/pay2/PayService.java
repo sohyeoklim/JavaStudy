@@ -1,0 +1,18 @@
+package poly.pay2;
+
+public class PayService {
+
+    public void processPay(String option, int amount) {
+
+        System.out.println("결제를 시작합니다. 결제방식:" + option + ", 결제 금액:" + amount);
+
+        Pay pay = PayStore.findPay(option);
+        boolean result = pay.pay(amount);
+
+        if (result) {
+            System.out.println("결제가 성공했습니다.");
+        } else {
+            System.out.println("결제가 실패했습니다.");
+        }
+    }
+}

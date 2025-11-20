@@ -1,6 +1,6 @@
 package class1;
 
-public class classStart1 {
+public class ClassStart1 {
 
     public static void main(String[] args) {
         String student1Name = "학생1";

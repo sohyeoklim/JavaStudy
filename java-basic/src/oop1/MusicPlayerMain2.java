@@ -7,7 +7,6 @@ public class MusicPlayerMain2 {
 
         //음악 플레이어를 켜기
         on(data);
-
         //볼륨 증가
         volumeUp(data);
         //볼륨 증가

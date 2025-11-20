@@ -20,14 +20,14 @@ public class ClassStart5 {
         }
 
         //향상된 for문의 원본? 같은거
-        for(int i = 0; i < students.length; i++) {
+        /* for(int i = 0; i < students.length; i++) {
             Student s = students[i];
             System.out.println("이름:" + s.name + " 나이:" + s.age + " 성적:" + s.grade);
-        }
+        } */
 
         //향상된 for문 iter
-        for(Student s : students) {
+        /* for(Student s : students) {
             System.out.println("이름:" + s.name + " 나이:" + s.age + " 성적:" + s.grade);
-        }
+        } */
     }
 }
